@@ -12,3 +12,10 @@ install:
 
 script:
   - python todolist/manage.py test
+
+notifications:
+  email:
+    recipients:
+      - mert.satilmaz@gmail.com
+    on_success: never # default: change
+    on_failure: never # default: always
